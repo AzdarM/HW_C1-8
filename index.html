@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>СОБАКИ vs КОТЫ vs ПОПУГАИ</title>
 </head>
@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <br>
-        <h1>Голосование</h1>
+        <h1>Голосование!</h1>
         <h1><span class="dogs">СОБАКИ</span> vs <span class="cats">КОШКИ</span> vs <span class="parrots">ПОПУГАИ</span></h1>
         <br>
         <h1 id="voted">Спасибо, Ваш голос принят!</h1>
@@ -21,16 +21,17 @@
         <div class="group-buttons">
             <button id='dogs' onclick="postRequest('dogs')" type="button" class="btn btn-outline-primary"><img class="img-animal" src="img/dog.jpg" alt="Dog pict"/><br> За друга человека </button>
             <button id='cats' onclick="postRequest('cats')" type="button" class="btn btn-outline-danger"><img class="img-animal" src="img/cat.jpg" alt="Cat pict"/><br> За хозяина дома </button>
-            <button id='parrots' onclick="postRequest('parrots')" type="button" class="btn btn-outline-success"><img class="img-animal" src="img/parrot.jpg" alt="Parrot pict"><br> За попку-дурачка </button>
+            <button id='parrots' onclick="postRequest('parrots')" type="button" class="btn btn-outline-success"><img class="img-animal" src="img/parrot.jpg" alt="Parrot pict" ><br> За попку-дурачка </button>
         </div>
         <br>
         <div>
-            <button id='result' onclick="window.open('result.html')" type='button' class='btn_result'> Посмотреть результаты голосования </button>
+            <button id='result' onclick="window.open('result.html')" type='button' class='btn btn-danger btn_result'> Посмотреть результаты голосования </button>
         </div>
     </div>
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="script/script1.js"></script>
 </body>
 
 </html>
