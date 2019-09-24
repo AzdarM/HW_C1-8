@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>СОБАКИ vs КОТЫ vs ПОПУГАИ</title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <h1>Голосование</h1>
+        <h1><span class="dogs">СОБАКИ</span> vs <span class="cats">КОШКИ</span> vs <span class="parrots">ПОПУГАИ</span></h1>
+        <br>
+        <h1 id="voted">Спасибо, Ваш голос принят!</h1>
+        <br>
+
+        <div class="group-buttons">
+            <button id='dogs' onclick="postRequest('dogs')" type="button" class="btn btn-outline-primary"><img class="img-animal" src="img/dog.jpg" alt="Dog pict"/><br> За друга человека </button>
+            <button id='cats' onclick="postRequest('cats')" type="button" class="btn btn-outline-danger"><img class="img-animal" src="img/cat.jpg" alt="Cat pict"/><br> За хозяина дома </button>
+            <button id='parrots' onclick="postRequest('parrots')" type="button" class="btn btn-outline-success"><img class="img-animal" src="img/parrot.jpg" alt="Parrot pict"><br> За попку-дурачка </button>
+        </div>
+        <br>
+        <div>
+            <button id='result' onclick="window.open('result.html')" type='button' class='btn_result'> Посмотреть результаты голосования </button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
